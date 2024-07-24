@@ -1,0 +1,23 @@
+{
+  "name": "ULTA Chrome Extension",
+  "description": "Part of a project completed for the Ukraine Leadership and Technology Academy (ULTA) 2024 Summer Program",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup_script/popup.html",
+    "default_icon": "assets/icon.png"
+  },
+  "permissions": [
+    "scripting", "storage", "tabs", "windows"  // list of permissions our extension can use. can add more if necessary
+  ],
+  "content_scripts": [
+    {
+      "js": [
+        "scripts/example_script.js"
+      ],
+      "matches": [
+        "https://ultacademy.org/*"
+      ]
+    }
+  ]
+}
