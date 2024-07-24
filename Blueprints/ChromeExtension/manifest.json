@@ -16,7 +16,8 @@
         "scripts/example_script.js"
       ],
       "matches": [
-        "https://ultacademy.org/*"
+        "https://ultacademy.org/*",
+        "https://www.ultacademy.org/*"
       ]
     }
   ]
